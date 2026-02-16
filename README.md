@@ -29,6 +29,24 @@ Both agents steelman the other side's argument before responding. The planner mu
 
 Requires [Claude Code](https://docs.anthropic.com/en/docs/claude-code) with agent teams enabled.
 
+Enable agent teams (experimental feature):
+
+```bash
+export CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS=1
+```
+
+Or add it to `~/.claude/settings.json`:
+
+```json
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  }
+}
+```
+
+Then:
+
 ```bash
 git clone <this-repo>
 cd steelman-planning
