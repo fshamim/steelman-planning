@@ -26,6 +26,10 @@ The system implements a two-agent debate loop orchestrated by a team lead:
 
 Invoke with: `/steelman-debate <problem or goal description>`
 
+## Output Rules
+
+When a debate converges, the lead must save the **complete final plan** to Tasks.md — not a summary. This includes all phases, steps, code snippets, configs, and verification commands exactly as produced by the planner. Alongside the full plan, include a **summarized debate history** table showing rounds, severity ratings, and key changes per round. Never reduce the final plan to bullet-point summaries.
+
 ## Project Rules
 
 - Tasks should be tracked in Tasks.md
